@@ -1,0 +1,23 @@
+h1 {
+	color: red;
+	/*border-color: pink;
+	border-width: 5px;
+	border-style: solid;
+*/
+border: 8px dashed pink;
+}
+
+li {
+	color: green;
+}
+
+h4 {
+	background: rgb(255,100,80);
+	color: blue;
+}
+
+body {
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTgo7-tdan7UHtjn6zkaqLQSKhY08Qdgw_DZg64BN_VwPHHg_p7);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
