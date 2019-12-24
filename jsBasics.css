@@ -1,0 +1,29 @@
+ul li{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+/* #funcPix{
+    width: 25%;
+    height: 50px;
+} */
+
+/* .image1{
+    background-image: url(jsBasics/movieDB.png);
+}
+
+.image2{
+    background-image: url(jsBasics/movieDBFor.png);
+}
+
+.image3{
+    background-image: url(jsBasics/movieDBForEach.png);
+}
+.image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-size: ;
+  } */
