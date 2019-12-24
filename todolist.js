@@ -1,6 +1,6 @@
 var todos = ["Laundry","Dinner","Dishes"];
 
-var input = prompt("What would you like to do?");
+var input = prompt("What would you like to do? [list/new/delete/quit]");
 
 
 while(input !== "quit"){
