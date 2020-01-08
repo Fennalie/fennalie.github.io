@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Exercise</title>
+</head>
+<body>
+    <h1>I am a h1</h1>
+    <p id="first" class="special">Hello</p>
+    <p class="special">Goodbye</p>
+    <p>Herro</p>
+    <p id="last">Fuck off</p>
+
+    <h1>Answers</h1>
+    <pre>Selecting first p</pre>
+    <ul>
+        <li>document.getElementById("first")</li>
+        <li>document.querySelector("#first")</li>
+        <li>document.querySelector("h1 + p")</li>
+        <li>document.getElementsByClassName("special")[0]</li>
+        <li>document.querySelector(".special")</li>
+        <li>document.querySelectorAll(".special")[0]</li>
+        <li>document.querySelectorAll("p")[0]</li>
+        <li>document.getElementsByTagName("p")[0]</li>
+    </ul>
+</body>
+</html>

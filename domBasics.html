@@ -4,22 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- Bs4 -->
+    <!-- Bs4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!-- fontawesome -->
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-
+    
     <title>Document Object Model</title>
 </head>
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.html"><i class="fas fa-dungeon"></i> Phuong's World</a>		
+        <a class="navbar-brand" href="index.html"><i class="fas fa-dungeon"></i> Phuong's World</a>		
     </nav>
+    
+    <section id="header" class="jumbotron text-center">
+        <h1 class="d-3">Document Object Model</h1>
+        <p>console.dir(Document);</p>
+    </section>
+   
+    <!-- Retrieving -->
+    <section class="mb-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="jumbotron jumbotron-fluid text-center">
+                            <h1 class="display-4">Retrieving Elements</h1>
+                        </div>
+                    </div>
+                    <div class="card bg-danger col-4">
+                    <div class="card-header">Document.</div>
+                    <div class="card-body">
+                        <ul>
+                            <li>getElementById()</li>
+                            <li>getElementsByClassName()</li>
+                            <li>getElementsByTagName()</li>
+                            <li>querySelector("CSS selector")</li>
+                            <ul>
+                                <li>returns first element</li>
+                            </ul>
+                            <li>querySelectorAll("CSS selector")</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+            
+    <!-- Manipulating -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron jumbotron-fluid text-center">
+                        <h1 class="display-4">Manipulating Elements</h1>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card bg-info">
+                        <div class="card-header">Style</div>
+                        <div class="card-body">
+                                <p>var.style.cssProperties = "";</p> 
+                        </div>
+                    </div>
+                    <div class="card bg-warning">
+                        <div class="card-header">classList</div>
+                        <div class="card-body">
+                            <p>Best practice is to define CSS class and use Js to turn it off/on</p>                            
+                            <ul>
+                                <li>add</li>
+                                <li>remove</li>
+                                <li>toggle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-danger">
+                        <div class="card-header">textContent</div>
+                        <p>returns & overwrites as string</p>
+                        <div class="card-body">
+                            <ul>
+                                <li>var.textContent</li>
+                                <li>var.textContent = "";</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-success">
+                        <div class="card-header">innerHTML
+                            <p>retrieves text and style tags in HTML format</p>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>var.innerHTML</li>
+                                <li>var.innerHTML = "";</li>
+                            </ul>
+                            <p>document.body.innerHTML = "h1> This works /h1>";</p>
+                        </div>
+                    </div>
+                    <div class="card bg-primary">
+                        <div class="card-header">Attributes</div>
+                        <div class="card-body">
+                            <ul>
+                                <li>var.getAttribute("")</li>
+                                <li>var.setAttribute("attb", "new attb");</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    
+   
 
-    <h1>Document Object Model</h1>
-    <p>console.dir(Document);</p>
-
-
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
