@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>What To Eat</title>
+    <link rel="stylesheet" href="whatToEat.css">
+    <title>What To Eat?</title>
 </head>
 <body>
-    <h1>The chosen cuisine is <span></span></h1>
     
+    <h3>Please choose from the list below</h3>
+    <button class="selection" id="salad">Salad</button>
+    <button class="selection" id="pizza">Pizza</button>
+    <button class="selection" id="sushi">Sushi</button>
+    <button class="selection" id="mexican">Mexican</button>
+    <button class="selection" id="burger">Burger</button>
+    
+    <div>
+        <input id="others" type="text" placeholder="Type a cuisine here">
+    </div>
+
+    <div>
+        <button id="reset">RESET</button>
+    </div>
+
+    <h6>Your chosen cuisines are:</h6>
+    <span class="chosen" id="chosen1"></span>
+   
+    <button id="pickButton">Pick for me</button>
+    
+    <h1>The chosen cuisine is <span id="pickedCuisine">ASS</span></h1>
+    
+    <script src="whatToEat.js"></script>
 </body>
 </html>
