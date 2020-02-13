@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patatap</title>
+    <script type="text/javascript" src="lib/paperjs-v0.12.4/dist/paper-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="bunchOfCircles.css">
+    <script type="text/paperscript" canvas="myCanvas">
+        for (var x = 0; x < 1000; x+=100) {
+            for (var y = 0; y < 1000; y+=100) {
+                new Path.Circle(new Point(x,y),10).fillColor = 'orange';                                
+            }
+        }  
+        
+        function onKeyDown(event) {   
+            var maxPoint = new Point(view.size.width, view.size.height);
+            var randomPoint = Point.random();       //math.random() equivalence. Will max out at 0.99..
+            var point = maxPoint * randomPoint;
+            console.log(maxPoint);
+            new Path.Circle(point, 10).fillColor = 'pink';
+        }
+        
+        var animatedCircle = new Path.Circle(new Point(300,300), 500);
+        animatedCircle.fillColor = 'orange';
+        
+        
+        function onFrame(event) {
+            animatedCircle.fillColor.hue += 1;
+            animatedCircle.scale(.9);
+            
+        }
+        
+        // var path = new Path.Circle({
+        //     center: view.center,
+        //     radius: 70,
+        //     fillColor: 'red'
+        // });
+        
+        // function onFrame(event) {
+            
+        //     path.fillColor.hue += 1;
+        //     path.scale(.9);
+        // }
+        //circle starting at 0,0,10
+        //every 100px another circle
+        
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

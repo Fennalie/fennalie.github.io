@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jQueryBasics.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <title>jQuery Basics</title>
+</head>
+<body>
+    
+    <p>$("Selector goes here")</p>
+    <p>$("Selector goes here").css("attribute", "properties")</p>
+    <p>$("h1").css("color", "yellow")</p>
+    <p>$("h1").css(stylesVar)</p>
+    <p>$("h1").css({
+        fontSize: "10px",
+        border: "3px dashed purple",
+        background: "rgba(89,45,20,0.5)"    
+    });</p>
+    <pre>0.5 = opacity</pre>
+
+    <div>Div 1</div>
+    <div class="highlight">Div 2</div>
+    <div id="third">Div 3</div>
+    <div class="highlight">Div 4</div>
+
+    <p>select all div and give them purple bkgr <img src="jQueryBasics/divPurple.png" alt="" ></p>
+    <p>select class hightlight make them 200px wide <img src="jQueryBasics/divWide200.png" alt="" ></p>
+    <p>select id third and give it orange border <img id="divBorder" src="jQueryBasics/divBorderOrange.png" alt="" ></p>
+    <p>select first div only and change font color to pink <img id="divPink" src="jQueryBasics/divPink.png" alt=""></p>
+    <div>
+        <p>ANSWERS</p>
+        <img src="jQueryBasics/divAnswers.png" >
+    </div>
+    <section class="methods">
+        <h3>jQuery common API</h3>
+        <p>.text("") === textContent</p>
+        <pre>text is HTML safe == pure text only</pre>
+        <p>.html() === innerHTML</p>
+        <p>.val() == extracts value from inputs/elements</p>
+        <p>.attr("attr", "value")</p>
+        <p>.attr({
+            attr: "value",
+            attr: "value"
+            });
+        </p>
+        <p>$("element").last().attr();</p>
+        <p>$("element:first-of-type").attr();</p>
+        <p>addClass()</p>
+        <p>removeClass()</p>
+        <p>toggleClass()</p>
+        <h5>EVENTS LISTENERS</h5>
+        <p>click() == adds listeners for existing elements</p>
+        <p>$("element").click(function(){
+            $(this).css("background", "pink")
+            });
+        </p>
+        <p>keypress()</p>
+        <p>$("element").keypress(function(event){
+            if(event.which === 13){
+                alert("You hit ENTER");
+            }
+            });
+        </p>
+        <p>on() = addEventListener === works for existing and future elements</p>
+        <p>on("event", function(){});</p>
+        <p>event.stopPropagation == stops event from bubbling up DOM tree</p>
+    </section>
+
+    <select name="dropdown" id="">
+        <option value="1">lala</option>
+        <option value="1">lele</option>
+        <option value="1">lili</option>
+    </select>
+    <script src="jQueryBasics.js"></script>
+</body>
+</html>
