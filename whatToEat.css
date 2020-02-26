@@ -1,1 +1,19 @@
 /* button mute class */
+body {
+    font-family: 'Raleway' ;
+}
+
+button {
+    font-family: inherit;
+}
+
+span {
+    font-family: inherit;
+    width:300px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+input {
+    font-family: inherit;
+}

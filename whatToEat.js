@@ -43,15 +43,26 @@ burger.addEventListener("click", function(){
     cuisinesDisplay();
 });
 
-others.addEventListener("change", function(){
-    selected.push(this.value);
-    cuisinesDisplay();
+others.addEventListener("keydown", function(event){
+    if (others.value === "" && event.keyCode === 13) {
+        alert("EMPTY FIELD MTFKER!");
+    }
+    else if (event.keyCode === 13) {
+        selected.push(this.value);
+        this.value = "";
+        cuisinesDisplay();
+    }    
 });
 
 pickButton.addEventListener("click", function(){
-    console.log("Clicked");
-    spinTheWheel();
-    pickedCuisine.textContent = chosen.toUpperCase();
+    if (selected.length == 0) {
+        alert("Nothing to choose from, clearly you like ASS")
+    }
+    else{
+        console.log("Clicked");
+        spinTheWheel();
+        pickedCuisine.textContent = chosen.toUpperCase();
+    }
 });
 
 reset.addEventListener("click", function(){
@@ -67,7 +78,7 @@ function cuisinesDisplay(){
 
 //array for randomizer - uses arr1.length
 function spinTheWheel(){
-    var result = Math.floor(Math.random() * (selected.length + 1));
+    var result = Math.floor(Math.random() * selected.length);
     chosen = selected[result];
     console.log(result);
     return chosen;
