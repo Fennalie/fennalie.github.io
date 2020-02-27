@@ -73,10 +73,13 @@ pickButton.addEventListener("click", function(){
     }    
 });
 
-reset.addEventListener("click", function(){
-    selected = [];
-    selectedDisplay.textContent = "";
-});
+// reset.addEventListener("click", function(){
+//     selected = [];
+//     var allLi = document.querySelectorAll("li");    
+//     for (i = 0; i < allLi.length; i++) {
+//         allLi.remove(i);        
+//     }
+// });
 //array for selected cuisines
 function cuisinesDisplay(){
     if (selected.length>0){
