@@ -7,6 +7,7 @@ var burger = document.getElementById("burger")
 var others = document.getElementById("others")
 var reset = document.getElementById("reset")
 var cuisines = document.querySelectorAll(".selection")
+var ul = document.querySelector("ul")
 var selectedDisplay = document.querySelector("#chosen1")
 var pickButton = document.querySelector("#pickButton")
 var pickedCuisine = document.querySelector("#pickedCuisine")
@@ -15,54 +16,61 @@ var chosen
 
 salad.addEventListener("click", function(){
     console.log("clicked");
-    selected.push("Salad");
-    cuisinesDisplay();    
+    buttonText(this);  
 });
 
 pizza.addEventListener("click", function(){
     console.log("clicked");
-    selected.push("Pizza"); 
-    cuisinesDisplay();
+    buttonText(this);
 });
 
 sushi.addEventListener("click", function(){
     console.log("clicked");
-    selected.push("Sushi");  
-    cuisinesDisplay();
+    buttonText(this);
 });
 
 mexican.addEventListener("click", function(){
     console.log("clicked");
-    selected.push("Mexican");  
-    cuisinesDisplay();
+    buttonText(this);
 });
 
 burger.addEventListener("click", function(){
-    console.log("clicked");
-    selected.push("Burger");  
-    cuisinesDisplay();
+    console.log("clicked");      
+    buttonText(this);
 });
 
 others.addEventListener("keydown", function(event){
     if (others.value === "" && event.keyCode === 13) {
         alert("EMPTY FIELD MTFKER!");
     }
-    else if (event.keyCode === 13) {
-        selected.push(this.value);
-        this.value = "";
-        cuisinesDisplay();
+    else if (event.keyCode === 13) {        
+        inputText();        
     }    
 });
 
+ul.addEventListener("click", function(event) {
+    var i = document.querySelector("i");
+    i.parentElement.parentElement.remove();
+});
+
 pickButton.addEventListener("click", function(){
-    if (selected.length == 0) {
+    var allLi = document.querySelectorAll("li");
+    if (allLi.length == 0) {
         alert("Nothing to choose from, clearly you like ASS")
     }
-    else{
-        console.log("Clicked");
+    else if (allLi.length !== selected.length) {
+        console.log("updating");
+        selected = [];
+        allLi.forEach(function(i){
+            selected.push(i.textContent);        
+        });
         spinTheWheel();
         pickedCuisine.textContent = chosen.toUpperCase();
     }
+    else {
+        spinTheWheel();
+        pickedCuisine.textContent = chosen.toUpperCase();
+    }    
 });
 
 reset.addEventListener("click", function(){
@@ -76,10 +84,32 @@ function cuisinesDisplay(){
     }
 }
 
-//array for randomizer - uses arr1.length
 function spinTheWheel(){
     var result = Math.floor(Math.random() * selected.length);
     chosen = selected[result];
     console.log(result);
     return chosen;
+}
+
+function inputText() {
+    var li = document.createElement("li");
+    var span = document.createElement("span");
+    var i = document.createElement("i");
+    i.setAttribute("class", "fas fa-trash-alt");
+    span.appendChild(i);
+    li.appendChild(document.createTextNode(others.value));
+    li.appendChild(span);
+    ul.appendChild(li);
+    others.value = "";
+}
+
+function buttonText(x) {
+    var li = document.createElement("li");
+    var span = document.createElement("span");
+    var i = document.createElement("i");
+    i.setAttribute("class", "fas fa-trash-alt");
+    span.appendChild(i);
+    li.appendChild(document.createTextNode(x.textContent));
+    li.appendChild(span);
+    ul.appendChild(li);    
 }
