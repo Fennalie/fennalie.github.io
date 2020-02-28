@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="whatToEat.css">
+    <link rel="stylesheet" href="css/whatToEat.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <title>What To Eat?</title>
 </head>
 <body>
+    <div class="lang">
+        <a href="whatToEatVN.html"><img id="vn" src="js/lib/vietnam.png" alt="js/lib/vietnam.eps"></a>
+    </div>   
     <h1>What to eat?</h1>
     <h3>Click on any of these buttons to add to your choices</h3>
     <button class="selection" id="veggie">Veggie</button>
@@ -37,7 +40,7 @@
         </ul>
     </div>
 
-        <p id="trashDescription">Click or tap anywhere near trash can to remove selection</p>
+        <p id="trashDescription">Click or tap anywhere near <i class="fas fa-trash-alt"></i> to remove selection</p>
         <button id="pickButton">Pick for me</button> 
         <p id="pickDescription"><= Click here to activate randomizer </p>
 
@@ -47,6 +50,6 @@
     
     <h1>The chosen cuisine is <span id="pickedCuisine">ASS</span></h1>
     
-    <script src="whatToEat.js"></script>
+    <script src="js/whatToEat.js"></script>
 </body>
 </html>

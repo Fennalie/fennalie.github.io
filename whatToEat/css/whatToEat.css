@@ -28,8 +28,32 @@ span {
 i {
     margin: 1px 3px;
 }
+
 input {
     font-family: inherit;
+}
+
+a{
+    width: inherit;
+    height: inherit;
+}
+.lang {
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+#vn {
+    width: inherit;
+    height: inherit;
+}
+
+#lang {
+    background: url('lib/vietnam.eps');
+    background-size: cover;
+    width: 20px;
+    height: 25px;
+    float: right;
 }
 
 #trashDescription {
