@@ -1,9 +1,13 @@
 // var selection = document.querySelectorAll(".selection")
-var salad = document.getElementById("salad")
+var veggie = document.getElementById("veggie")
 var pizza = document.getElementById("pizza")
 var sushi = document.getElementById("sushi")
 var mexican = document.getElementById("mexican")
 var burger = document.getElementById("burger")
+var vietnamese = document.getElementById("rice")
+var thai = document.getElementById("thai")
+var korean = document.getElementById("korean")
+var chinese = document.getElementById("chinese")
 var others = document.getElementById("others")
 var reset = document.getElementById("reset")
 var cuisines = document.querySelectorAll(".selection")
@@ -14,27 +18,39 @@ var pickedCuisine = document.querySelector("#pickedCuisine")
 var selected = [];
 var chosen
 
-salad.addEventListener("click", function(){
+veggie.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);  
 });
-
 pizza.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);
 });
-
 sushi.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);
 });
-
 mexican.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);
 });
-
 burger.addEventListener("click", function(){
+    console.log("clicked");      
+    buttonText(this);
+});
+vietnamese.addEventListener("click", function(){
+    console.log("clicked");      
+    buttonText(this);
+});
+thai.addEventListener("click", function(){
+    console.log("clicked");      
+    buttonText(this);
+});
+korean.addEventListener("click", function(){
+    console.log("clicked");      
+    buttonText(this);
+});
+chinese.addEventListener("click", function(){
     console.log("clicked");      
     buttonText(this);
 });
@@ -47,10 +63,10 @@ others.addEventListener("keydown", function(event){
         inputText();        
     }    
 });
-
+//minimize the area for click so its span only. also fix span css
 ul.addEventListener("click", function(event) {
-    var i = document.querySelector("i");
-    i.parentElement.parentElement.remove();
+    var span = document.querySelector("span");
+    span.parentElement.remove();
 });
 
 pickButton.addEventListener("click", function(){
@@ -73,19 +89,14 @@ pickButton.addEventListener("click", function(){
     }    
 });
 
-// reset.addEventListener("click", function(){
-//     selected = [];
-//     var allLi = document.querySelectorAll("li");    
-//     for (i = 0; i < allLi.length; i++) {
-//         allLi.remove(i);        
-//     }
-// });
-//array for selected cuisines
-function cuisinesDisplay(){
-    if (selected.length>0){
-        selectedDisplay.innerHTML = selected.toString();
-    }
-}
+reset.addEventListener("click", function(){
+    selected = [];
+    var allLi = document.querySelectorAll("li");    
+    allLi.forEach(li => {
+        console.log(li);
+        li.remove();
+    });
+});
 
 function spinTheWheel(){
     var result = Math.floor(Math.random() * selected.length);

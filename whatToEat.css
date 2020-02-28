@@ -32,10 +32,23 @@ input {
     font-family: inherit;
 }
 
+#trashDescription {
+    font-size: 8px;
+}
+#pickDescription {
+    display: inline;
+    font-size: 8px;
+}
+
+#pickedCuisine {
+    color: salmon;
+}
+
 #reset {
     background-color: #EA6841;
 }
 
 #pickButton {
+    display: inline;
     background-color: #AEE8EF;
 }
