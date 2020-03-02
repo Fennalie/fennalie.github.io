@@ -4,76 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="jQueryBasics.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <title>jQuery Basics</title>
 </head>
 <body>
-    
-    <p>$("Selector goes here")</p>
-    <p>$("Selector goes here").css("attribute", "properties")</p>
-    <p>$("h1").css("color", "yellow")</p>
-    <p>$("h1").css(stylesVar)</p>
-    <p>$("h1").css({
-        fontSize: "10px",
-        border: "3px dashed purple",
-        background: "rgba(89,45,20,0.5)"    
+    <h1>jQuery Basics</h1>
+    <p>$(<span class="green">"Selector goes here"</span>)</p>
+    <p>$(<span class="green">"Selector goes here"</span>).<span class="blue">css</span>(<span class="orange">"attribute"</span>,<span class="orange">"properties"</span>)</p>
+    <p>$(<span class="green">"h1"</span>).<span class="blue">css</span>(<span class="orange">"color"</span>, <span class="orange">"yellow"</span>)</p>
+    <p>$(<span class="green">"h1"</span>).<span class="blue">css</span>(<span class="purple">stylesVar</span>)</p>
+    <p>$(<span class="green">"h1"</span>).<span class="blue">css</span>({
+        <span class="red">fontSize</span>: <span class="orange">"10px"</span>,
+        <span class="red">border</span>: <span class="orange">"3px dashed purple"</span>,
+        <span class="red">background</span>: <span class="orange">"rgba(89,45,20,0.5)"</span>    
     });</p>
     <pre>0.5 = opacity</pre>
-
+    <hr>
     <div>Div 1</div>
     <div class="highlight">Div 2</div>
     <div id="third">Div 3</div>
     <div class="highlight">Div 4</div>
-
+    
     <p>select all div and give them purple bkgr <img src="jQueryBasics/divPurple.png" alt="" ></p>
     <p>select class hightlight make them 200px wide <img src="jQueryBasics/divWide200.png" alt="" ></p>
     <p>select id third and give it orange border <img id="divBorder" src="jQueryBasics/divBorderOrange.png" alt="" ></p>
     <p>select first div only and change font color to pink <img id="divPink" src="jQueryBasics/divPink.png" alt=""></p>
+    
     <div>
         <p>ANSWERS</p>
         <img src="jQueryBasics/divAnswers.png" >
     </div>
+    
+    <hr>
     <section class="methods">
         <h3>jQuery common API</h3>
-        <p>.text("") === textContent</p>
+        <p>.<span class="blue">text</span>( ) === textContent</p>
         <pre>text is HTML safe == pure text only</pre>
-        <p>.html() === innerHTML</p>
-        <p>.val() == extracts value from inputs/elements</p>
-        <p>.attr("attr", "value")</p>
-        <p>.attr({
-            attr: "value",
-            attr: "value"
-            });
-        </p>
-        <p>$("element").last().attr();</p>
-        <p>$("element:first-of-type").attr();</p>
-        <p>addClass()</p>
-        <p>removeClass()</p>
-        <p>toggleClass()</p>
-        <h5>EVENTS LISTENERS</h5>
-        <p>click() == adds listeners for existing elements</p>
-        <p>$("element").click(function(){
-            $(this).css("background", "pink")
-            });
-        </p>
-        <p>keypress()</p>
-        <p>$("element").keypress(function(event){
-            if(event.which === 13){
-                alert("You hit ENTER");
-            }
-            });
-        </p>
-        <p>on() = addEventListener === works for existing and future elements</p>
-        <p>on("event", function(){});</p>
-        <p>event.stopPropagation == stops event from bubbling up DOM tree</p>
-    </section>
+        <p>.<span class="blue">html</span>( ) === innerHTML</p>
+        <p>.<span class="blue">val</span>( ) == extracts value from inputs/elements</p>
+        <p>.<span class="blue">attr</span>(<span class="orange">"attr"</span>, <span class="orange">"value"</span>)</p>
+        <p>.<span class="blue">attr</span>({
+            <span class="red">attr</span>: <span class="orange">"value"</span>,
+            <span class="red">attr</span>: <span class="orange">"value"</span>
+        });
+    </p>
+    <p>$(<span class="green">"element"</span>).<span class="blue">last</span>( ).<span class="blue">attr</span>( );</p>
+    <p>$(<span class="green">"element:first-of-type"</span>).<span class="blue">attr</span>( );</p>
+    <p><span class="blue">addClass</span>( )</p>
+    <p><span class="blue">removeClass</span>( )</p>
+    <p><span class="blue">toggleClass</span>( )</p>
+    <hr></hr>
+    <h5>EVENTS LISTENERS</h5>
+    <p><span class="blue">click</span>( ) == adds listeners for existing elements</p>
+    <p>$(<span class="green">"element"</span>).<span class="blue">click</span>(<span class="purple">function</span>( ){
+        $(<span class="orange">this</span>).<span class="blue">css</span>(<span class="orange">"background"</span>, <span class="orange">"pink"</span>)
+    });
+</p>
+<p><span class="blue">keypress</span>( )</p>
+<p>$(<span class="green">"element"</span>).<span class="blue">keypress</span>(<span class="purple">function</span>(<span class="red">event</span>){
+    <span class="purple">if</span>(<span class="red">event</span>.<span class="red">which === 13</span> ){
+        <span class="blue">alert</span>(<span class="orange">"You hit ENTER"</span>);
+    }
+});
+</p>
+<p><span class="blue">on</span>( ) = addEventListener === works for existing and future elements</p>
+<p><span class="blue">on</span>(<span class="orange">"event"</span>, <span class="purple">function</span>( ){});</p>
+<p><span class="blue">event</span>.<span class="blue">stopPropagation</span> == stops event from bubbling up DOM tree</p>
+</section>
 
-    <select name="dropdown" id="">
-        <option value="1">lala</option>
-        <option value="1">lele</option>
-        <option value="1">lili</option>
-    </select>
-    <script src="jQueryBasics.js"></script>
+<select name="dropdown" id="">
+    <option value="1">lala</option>
+    <option value="1">lele</option>
+    <option value="1">lili</option>
+</select>
+<section>
+    <p>Route orders in your app is important. '*' should be last</p>
+    <p>route paramater: /database/:databaseName == defining a search pattern instead of defining specific path/dbname</p>
+</section>
+
+<script src="jQueryBasics.js"></script>
 </body>
 </html>

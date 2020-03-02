@@ -1,6 +1,30 @@
+body {
+    font-family: 'Comfortaa';
+}
+
 img {
     width: 600px;
     height: 50%;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.orange {
+    color: darkorange;
+}
+
+.purple {
+    color: purple;
+}
+
+.red {
+    color: red;
 }
 
 #divPink {
