@@ -1,5 +1,10 @@
 // var selection = document.querySelectorAll(".selection")
-var veggie = document.getElementById("veggie")
+var western = document.getElementById("western")
+var eastern = document.getElementById("eastern")
+var westSelection = document.getElementById("westernList")
+var eastSelection = document.getElementById("easternList")
+var veggieWest = document.getElementById("veggieWest")
+var veggieEast = document.getElementById("veggieEast")
 var pizza = document.getElementById("pizza")
 var sushi = document.getElementById("sushi")
 var mexican = document.getElementById("mexican")
@@ -18,7 +23,23 @@ var pickedCuisine = document.querySelector("#pickedCuisine")
 var selected = [];
 var chosen
 
-veggie.addEventListener("click", function(){
+western.addEventListener("click", function(){
+    console.log("showWestern");
+    selectionDisplayToggle(westSelection);
+    buttonOn(westSelection, this);
+});
+
+eastern.addEventListener("click", function(){
+    console.log("showEastern");
+    selectionDisplayToggle(eastSelection);
+    buttonOn(eastSelection, this);
+});
+
+veggieWest.addEventListener("click", function(){
+    console.log("clicked");
+    buttonText(this);  
+});
+veggieEast.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);  
 });
@@ -127,3 +148,27 @@ function buttonText(x) {
     li.appendChild(span);
     ul.appendChild(li);    
 }
+
+function selectionDisplayToggle(x){
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+
+function buttonOn(x,y){
+    if (x.style.display === "block") {
+        y.classList.add("buttonClick");
+    }
+    else {
+        y.classList.remove("buttonClick");
+    }
+}
+// function easternDisplayToggle(){
+//     if (eastSelection.style.display === "none") {
+//       eastSelection.style.display = "block";
+//     } else {
+//       eastSelection.style.display = "none";
+//     }
+// }

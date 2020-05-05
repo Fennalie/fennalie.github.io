@@ -43,6 +43,19 @@ a{
     height: 30px;
 }
 
+
+.buttonClick {
+    background: rgb(43, 170, 202);
+}
+
+/* #easternList {
+    display: none;
+}
+
+#westernList {
+    display: none;
+} */
+
 #vn {
     width: inherit;
     height: inherit;
