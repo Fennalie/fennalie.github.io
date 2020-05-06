@@ -10,53 +10,80 @@
     <title>What To Eat?</title>
 </head>
 <body>
-    <div class="lang">
-        <a href="whatToEatVN.html"><img id="vn" src="js/lib/vietnam.png" alt="js/lib/vietnam.eps"></a>
-    </div>   
-    <h1>What to eat?</h1>
-        <button id="western">Western</button>
-        <button id="eastern">Eastern</button>
-    <h3>Click on any of these buttons to add to your choices</h3>
-    <div id="westernList">
-        <button class="selection" id="veggieWest">Western Veggie</button>
-        <button class="selection" id="pizza">Pizza</button>
-        <button class="selection" id="mexican">Mexican</button>
-        <button class="selection" id="burger">Burger</button>
-    </div>
-    <div id="easternList">
-        <button class="selection" id="veggieEast">Eastern Veggie</button>
-        <button class="selection" id="sushi">Sushi</button>
-        <button class="selection" id="rice">Vietnamese</button>
-        <button class="selection" id="thai">Thai</button>
-        <button class="selection" id="korean">Korean</button>
-        <button class="selection" id="chinese">Chinese</button>
-    </div>
-    
-    <div id="or">
-        <h3>OR</h3>
-    </div>
-    
-    <div>
-        <input id="others" type="text" placeholder="Type a cuisine HERE">
-    </div>
-    
-    <h5>Your list of chosen cuisines are:</h5>
-
-    <div>
-        <ul>            
-        </ul>
-    </div>
-
+    <!-- -All randomizer
+        -List of restaurants  -->
+        <div class="lang">
+            <a href="whatToEatVN.html"><img id="vn" src="js/lib/vietnam.png" alt="js/lib/vietnam.eps"></a>
+        </div>   
+        
+        <h1>What to eat?</h1>
+        
+        <section>
+            <h3>Pick one or more:</h3>
+            <div class="topButtons">
+                <button id="western">Western</button>
+                <button id="eastern">Eastern</button>
+                <button id="allPick">Pick for me</button>
+                <!-- show/hide this - link with li -->
+            </div>
+            <div class="resultDescription">
+                <p id="resultDescription">Result at the bottom of page</p>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <h3>Pick some of these:</h3>
+        
+        <div id="westernList">
+            <button class="selection" id="veggieWest">Western Veggie</button>
+            <button class="selection" id="pizza">Pizza</button>
+            <button class="selection" id="mexican">Mexican</button>
+            <button class="selection" id="burger">Burger</button>
+            <button class="selection" id="sandwich">Sandwich</button>
+            <button class="selection" id="french">French</button>
+            <button class="selection" id="spanish">Spanish</button>
+            <button class="selection" id="mediterranean">Mediterranean</button>
+        </div>
+        
+        <div id="easternList">
+            <button class="selection" id="veggieEast">Eastern Veggie</button>
+            <button class="selection" id="sushi">Japanese</button>
+            <button class="selection" id="rice">Vietnamese</button>
+            <button class="selection" id="thai">Thai</button>
+            <button class="selection" id="korean">Korean</button>
+            <button class="selection" id="chinese">Chinese</button>
+        </div>
+        
+        <div id="or">
+            <h3>OR</h3>
+        </div>
+        
+        <div>
+            <input id="others" type="text" placeholder="Type a cuisine HERE">
+        </div>
+        
+        <hr>
+        
+        <h5>Your list of chosen cuisines are:</h5>
+        
+        <div>
+            <ul>            
+            </ul>
+        </div>
+        
         <p id="trashDescription">Click or tap anywhere near <i class="fas fa-trash-alt"></i> to remove selection</p>
         <button id="pickButton">Pick for me</button> 
         <p id="pickDescription"><= Click here to activate randomizer </p>
-
-    <div>
-        <button id="reset">RESET</button>
-    </div>
-    
-    <h1>The chosen cuisine is <span id="pickedCuisine">ASS</span></h1>
-    
-    <script src="js/whatToEat.js"></script>
-</body>
-</html>
+        
+        <div>
+            <button id="reset">RESET</button>
+        </div>
+        
+        <hr>
+        
+        <h1>The chosen cuisine is <span id="pickedCuisine">ASS</span></h1>
+        
+        <script src="js/whatToEat.js"></script>
+    </body>
+    </html>

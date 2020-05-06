@@ -3,6 +3,8 @@ var western = document.getElementById("western")
 var eastern = document.getElementById("eastern")
 var westSelection = document.getElementById("westernList")
 var eastSelection = document.getElementById("easternList")
+var allPick = document.getElementById("allPick")
+
 var veggieWest = document.getElementById("veggieWest")
 var veggieEast = document.getElementById("veggieEast")
 var pizza = document.getElementById("pizza")
@@ -13,6 +15,11 @@ var vietnamese = document.getElementById("rice")
 var thai = document.getElementById("thai")
 var korean = document.getElementById("korean")
 var chinese = document.getElementById("chinese")
+var sandwich = document.getElementById("sandwich")
+var french = document.getElementById("french")
+var spanish = document.getElementById("spanish")
+var mediterranean = document.getElementById("mediterranean")
+
 var others = document.getElementById("others")
 var reset = document.getElementById("reset")
 var cuisines = document.querySelectorAll(".selection")
@@ -21,7 +28,23 @@ var selectedDisplay = document.querySelector("#chosen1")
 var pickButton = document.querySelector("#pickButton")
 var pickedCuisine = document.querySelector("#pickedCuisine")
 var selected = [];
+var allTheFood = ["Western Veggie", "Pizza", "Mexican", "Burger", "Sandwich", "French", "Spanish", "Mediterranean", "Eastern Veggie", "Japanese", "Vietnamese", "Thai", "Korean", "Chinese"]
 var chosen
+
+start()
+
+allPick.addEventListener("click", function(){
+    console.log("all pick");
+    var allLi = document.querySelectorAll("li");    
+    if (allLi.length > 0) {
+        allPick.disabled = true;
+    } else {
+        spinTheWheel(allTheFood);
+        pickedCuisine.textContent = chosen.toUpperCase();
+    }
+    allPick.disabled = false;
+    var allLi = [];
+});
 
 western.addEventListener("click", function(){
     console.log("showWestern");
@@ -39,6 +62,27 @@ veggieWest.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);  
 });
+
+sandwich.addEventListener("click", function(){
+    console.log("clicked");
+    buttonText(this);  
+});
+
+french.addEventListener("click", function(){
+    console.log("clicked");
+    buttonText(this);  
+});
+
+spanish.addEventListener("click", function(){
+    console.log("clicked");
+    buttonText(this);  
+});
+
+mediterranean.addEventListener("click", function(){
+    console.log("clicked");
+    buttonText(this);  
+});
+
 veggieEast.addEventListener("click", function(){
     console.log("clicked");
     buttonText(this);  
@@ -101,11 +145,11 @@ pickButton.addEventListener("click", function(){
         allLi.forEach(function(i){
             selected.push(i.textContent);        
         });
-        spinTheWheel();
+        spinTheWheel(selected);
         pickedCuisine.textContent = chosen.toUpperCase();
     }
     else {
-        spinTheWheel();
+        spinTheWheel(selected);
         pickedCuisine.textContent = chosen.toUpperCase();
     }    
 });
@@ -119,9 +163,9 @@ reset.addEventListener("click", function(){
     });
 });
 
-function spinTheWheel(){
-    var result = Math.floor(Math.random() * selected.length);
-    chosen = selected[result];
+function spinTheWheel(x){
+    var result = Math.floor(Math.random() * x.length);
+    chosen = x[result];
     console.log(result);
     return chosen;
 }
@@ -165,10 +209,10 @@ function buttonOn(x,y){
         y.classList.remove("buttonClick");
     }
 }
-// function easternDisplayToggle(){
-//     if (eastSelection.style.display === "none") {
-//       eastSelection.style.display = "block";
-//     } else {
-//       eastSelection.style.display = "none";
-//     }
-// }
+
+function start(){
+    selectionDisplayToggle(westSelection);
+    selectionDisplayToggle(eastSelection);
+    buttonOn(westSelection, western);
+    buttonOn(eastSelection, eastern);
+}
