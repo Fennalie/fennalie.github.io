@@ -13,17 +13,45 @@
     <div class="lang">
         <a href="whatToEat.html"><img id="uk" src="js/lib/uk.png" alt="js/lib/uk.eps"></a>
     </div>
+
     <h1>Ăn gì đây?</h1>
-    <h3>Ấn vào những loại ẩm thực dưới đây</h3>
-    <button class="selection" id="veggie">Chay</button>
-    <button class="selection" id="pizza">Pizza</button>
-    <button class="selection" id="sushi">Sushi</button>
-    <button class="selection" id="mexican">Mê-hi-cô</button>
-    <button class="selection" id="burger">Burger</button>
-    <button class="selection" id="rice">Việt</button>
-    <button class="selection" id="thai">Thái</button>
-    <button class="selection" id="korean">Hàn</button>
-    <button class="selection" id="chinese">Trung</button>
+
+    <section>
+        <h3>Chọn một hoặc nhiều:</h3>
+        <div class="topButtons">
+            <button id="western">Âu</button>
+            <button id="eastern">Á</button>
+            <button id="allPick">Tự chọn</button>
+            <!-- show/hide this - link with li -->
+        </div>
+        <div class="resultDescription">
+            <p id="resultDescription">Kết quả ở cuối trang</p>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <h3>Chọn một số món ưa thích:</h3>
+    
+    <div id="westernList">
+        <button class="selection" id="veggieWest">Chay Âu</button>
+        <button class="selection" id="pizza">Pizza</button>
+        <button class="selection" id="mexican">Mê-hi-cô</button>
+        <button class="selection" id="burger">Burger</button>
+        <button class="selection" id="sandwich">Sandwich</button>
+        <button class="selection" id="french">Pháp</button>
+        <button class="selection" id="spanish">Tây Ban Nha</button>
+        <button class="selection" id="mediterranean">Địa trung hải</button>
+    </div>
+    
+    <div id="easternList">
+        <button class="selection" id="veggieEast">Chay Á</button>
+        <button class="selection" id="sushi">Nhật</button>
+        <button class="selection" id="rice">Việt</button>
+        <button class="selection" id="thai">Thái</button>
+        <button class="selection" id="korean">Hàn</button>
+        <button class="selection" id="chinese">Trung</button>
+    </div>
     
     <div id="or">
         <h3>HOẶC</h3>

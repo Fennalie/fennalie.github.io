@@ -39,10 +39,32 @@ a{
     width: inherit;
     height: inherit;
 }
+
 .lang {
     float: right;
     width: 30px;
     height: 30px;
+}
+
+.buttonClick {
+    background: rgb(43, 170, 202);
+}
+
+.resultDescription {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+#resultDescription {
+    font-size: 8px;
+    float: right;
+}
+
+#allPick {
+    float: right;
+    background-color: mediumvioletred;
+    color: white;
 }
 
 #uk {
