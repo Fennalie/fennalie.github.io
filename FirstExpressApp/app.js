@@ -14,6 +14,7 @@ app.get("/dog", function(req, res){
     console.log("requested /dog")
     res.send("MEOW!");
 });
+// :x will look for that variable's db name
 app.get("/r/:subredditName", function(req, res){
     var subreddit = req.params.subredditName;
     console.log(req.params);

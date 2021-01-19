@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/whatToEatVN.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,600,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>What To Eat?</title>
+</head>
+<body>
+    <div class="lang">
+        <a href="whatToEat.html"><img id="uk" src="js/lib/uk.png" alt="js/lib/uk.eps"></a>
+    </div>
+
+    <h1>Ăn gì đây?</h1>
+
+    <section>
+        <h3>Chọn một hoặc nhiều:</h3>
+        <div class="topButtons">
+            <button id="western">Âu</button>
+            <button id="eastern">Á</button>
+            <button id="allPick">Tự chọn</button>
+            <!-- show/hide this - link with li -->
+        </div>
+        <div class="resultDescription">
+            <p id="resultDescription">Kết quả ở cuối trang</p>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <h3>Chọn một số món ưa thích:</h3>
+    
+    <div id="westernList">
+        <button class="selection" id="veggieWest">Chay Âu</button>
+        <button class="selection" id="pizza">Pizza</button>
+        <button class="selection" id="mexican">Mê-hi-cô</button>
+        <button class="selection" id="burger">Burger</button>
+        <button class="selection" id="sandwich">Sandwich</button>
+        <button class="selection" id="french">Pháp</button>
+        <button class="selection" id="spanish">Tây Ban Nha</button>
+        <button class="selection" id="mediterranean">Địa trung hải</button>
+    </div>
+    
+    <div id="easternList">
+        <button class="selection" id="veggieEast">Chay Á</button>
+        <button class="selection" id="sushi">Nhật</button>
+        <button class="selection" id="rice">Việt</button>
+        <button class="selection" id="thai">Thái</button>
+        <button class="selection" id="korean">Hàn</button>
+        <button class="selection" id="chinese">Trung</button>
+    </div>
+    
+    <div id="or">
+        <h3>HOẶC</h3>
+    </div>
+    
+    <div>
+        <input id="others" type="text" placeholder="Nhập ẩm thực TẠI ĐÂY">
+    </div>
+    
+    <h5>Danh sách lực chọn của bạn là:</h5>
+
+    <div>
+        <ul>            
+        </ul>
+    </div>
+
+        <p id="trashDescription">Nhấp hoặc nhấn vào bất cứ nơi nào gần <i class="fas fa-trash-alt"></i> để xóa lựa chọn</p>
+        <button id="pickButton">Chọn cho tôi</button> 
+        <p id="pickDescription"><= Nhấn vào đây để kích hoạt lựa chọn ngẫu nhiên</p>
+
+    <div>
+        <button id="reset">Xoá hết</button>
+    </div>
+    
+    <h1>Ẩm thực được lựa chọn là <span id="pickedCuisine">ASS</span></h1>
+
+    <div id="ref">
+        Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
+    
+    <script src="js/whatToEatVN.js"></script>
+</body>
+</html>

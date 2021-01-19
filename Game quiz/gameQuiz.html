@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/gameQuiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>Smorgasboard game selector</title>
+</head>
+<body>
+    <!-- -All randomizer
+        -List of restaurants  -->
+        <div class="lang">
+            <a href="gameQuiz.html"><img id="vn" src="js/lib/vietnam.png" alt="js/lib/vietnam.eps"></a>
+        </div>   
+        
+        <h1>What to play?</h1>
+        
+        <section>
+            <h3>Pick one or more:</h3>
+            <div class="topButtons">
+                <button id="kidGames">Kid Friendly</button>
+                <button id="adultGames">Adults Only</button>
+                <button id="allPick">Let the game begin!</button>
+                <!-- show/hide this - link with li -->
+            </div>
+            <div class="resultDescription">
+                <p id="resultDescription">Result at the bottom of page</p>
+            </div>
+            <h3>How many people are playing:</h3>
+            <div class="topButtons">
+                <button id="twoP">2</button>
+                <button id="fourP">4</button>
+                <button id="sixP">6</button>
+                <button id="eightP">8</button>
+                <!-- show/hide this - link with li -->
+            </div>
+            <h3>How long per game:</h3>
+            <div class="topButtons">
+                <button id="short">30 mins/less</button>
+                <button id="medium">1 hour/less</button>
+                <button id="long">A long while</button>
+                <!-- show/hide this - link with li -->
+            </div>
+            <h3>How long per game:</h3>
+            <div class="topButtons">
+                <button id="competitive">Competitive</button>
+                <button id="coop">Coop</button>
+                <!-- show/hide this - link with li -->
+            </div>
+        </section>
+        
+        <hr>
+        
+       
+        
+        <button id="pickButton">Pick for me</button> 
+        <p id="pickDescription"><= Click here to activate randomizer </p>
+        
+        <div>
+            <button id="reset">RESET</button>
+        </div>
+        
+        <hr>
+        
+        <h1>The chosen one is <span id="pickedCuisine">ASS</span></h1>
+        
+        <script src="js/gameQuiz.js"></script>
+    </body>
+    </html>
