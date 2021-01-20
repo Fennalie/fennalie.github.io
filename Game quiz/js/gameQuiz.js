@@ -16,25 +16,17 @@ var chosen = []
 var answers = []
 var arr = [];
 
-// var games = ]
-//     { name: "Bananagram", maxplayers : 8, time : 30, kid : true },
-//     { name : "Carcassonne", maxplayers : 5, time : 60, kid : false },
-//     {name : "Code Names", maxplayers : 6, time : 15, kid : true },
-//     {name : "Battle ships ", maxplayers : 2, time : 30, kid : true },
-    
-// ]
-
 var games = {
     '1':  { 'name': "Bananagram", 'maxplayers': 8, 'time': "short", 'kid':true, 'competitive':true },
     '2':  { 'name': "Carcassonne", 'maxplayers': 5, 'time': "long", 'kid':true, 'competitive':true},
     '3':  { 'name': "Code Names", 'maxplayers': 6, 'time': "short", 'kid':true, 'competitive':false},
     '4':  { 'name': "Battle ships", 'maxplayers': 2, 'time': "medium", 'kid':true, 'competitive':true},
-    '5':  { 'name': "Bananagram2", 'maxplayers': 8, 'time': "short", 'kid':true, 'competitive':true },
-    '6':  { 'name': "Code Names2", 'maxplayers': 6, 'time': "short", 'kid':true, 'competitive':false},
-    
+    '5':  { 'name': "Aquarius", 'maxplayers': 4, 'time': "short", 'kid':true, 'competitive':true },
+    '6':  { 'name': "Dragon wood", 'maxplayers': 4, 'time': "short", 'kid':true, 'competitive':true},
+    '7':  { 'name': "Guillotine", 'maxplayers': 4, 'time': "short", 'kid':true, 'competitive':true},
+    '8':  { 'name': "Monopoly Deal", 'maxplayers': 4, 'time': "medium", 'kid':true, 'competitive':true},
+    '9':  { 'name': "Pandemic", 'maxplayers': 4, 'time': "medium", 'kid':true, 'competitive':false},    
 };
-
-
 
 kidGames.addEventListener("click", function(){
     this.classList.add("buttonClick");
@@ -51,22 +43,22 @@ adultGames.addEventListener("click", function(){
     console.log(answers);
     buttonOn2(kidGames,this);
     console.log("showadultGames");
-    
 });
+
 allPick.addEventListener("click", function(){
     this.classList.add("buttonClick");
     search();
-    console.log("showallGames");
-    
+    console.log("showallGames");  
 });
+
 twoP.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[1] = 2;
     console.log(answers);
     buttonOn3(fourP,sixP,this);
     console.log("2 People");
-    
 });
+
 fourP.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[1] = 4;
@@ -95,43 +87,39 @@ short.addEventListener("click", function(){
     console.log(answers);
     buttonOn3(medium,long,this);
     console.log("30mins/less");
-    
 });
+
 medium.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[0] = "medium";
     console.log(answers);
     buttonOn3(short,long,this);
     console.log("1hour/less");
-    
 });
+
 long.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[0] = "long";
     console.log(answers);
     buttonOn3(medium,short,this);
     console.log("1+ hours");
-    
 });
+
 competitive.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[2] = true;
     console.log(answers);
     buttonOn2(coop,this);
     console.log("competitive");
-    
 });
+
 coop.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[2] = false;
     console.log(answers);
     buttonOn2(competitive,this);
     console.log("coop");
-    
 });
-
-
-
 
 for (var item in games) {
 if (games.hasOwnProperty(item)) {
