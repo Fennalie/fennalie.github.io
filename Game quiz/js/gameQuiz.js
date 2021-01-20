@@ -4,13 +4,14 @@ var allPick = document.getElementById("allPick")
 var twoP = document.getElementById("twoP")
 var fourP = document.getElementById("fourP")
 var sixP = document.getElementById("sixP")
-var eightP = document.getElementById("eightP")
 var short = document.getElementById("short")
 var medium = document.getElementById("medium")
 var long = document.getElementById("long")
 var competitive = document.getElementById("competitive")
 var coop = document.getElementById("coop")
+var reset = document.getElementById("reset")
 var pickedCuisine = document.querySelector("#pickedCuisine")
+var allButtons = document.querySelectorAll("button")
 var chosen = []
 var answers = []
 var arr = [];
@@ -39,7 +40,7 @@ kidGames.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[3] = true;
     console.log(answers);
-    buttonOn(adultGames,this);
+    buttonOn2(adultGames,this);
     console.log("showkidGames");
     
 });
@@ -48,7 +49,7 @@ adultGames.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers.pop();
     console.log(answers);
-    buttonOn(kidGames,this);
+    buttonOn2(kidGames,this);
     console.log("showadultGames");
     
 });
@@ -62,6 +63,7 @@ twoP.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[1] = 2;
     console.log(answers);
+    buttonOn3(fourP,sixP,this);
     console.log("2 People");
     
 });
@@ -69,27 +71,29 @@ fourP.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[1] = 4;
     console.log(answers);
-    console.log("4 People");
-    
+    buttonOn3(twoP,sixP,this);
+    console.log("4 or less People");
 });
+
 sixP.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[1] = 6;
     console.log(answers);
-    console.log("6 People");
-    
+    buttonOn3(fourP,twoP,this);
+    console.log("4-8 People");
 });
-eightP.addEventListener("click", function(){
-    this.classList.add("buttonClick");
-    answers[1] = 8;
-    console.log(answers);
-    console.log("8 People");
-    
-});
+
+// eightP.addEventListener("click", function(){
+//     this.classList.add("buttonClick");
+//     answers[1] = 8;
+//     console.log(answers);
+//     console.log("8 People");
+// });
 short.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[0] = "short";
     console.log(answers);
+    buttonOn3(medium,long,this);
     console.log("30mins/less");
     
 });
@@ -97,6 +101,7 @@ medium.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[0] = "medium";
     console.log(answers);
+    buttonOn3(short,long,this);
     console.log("1hour/less");
     
 });
@@ -104,6 +109,7 @@ long.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[0] = "long";
     console.log(answers);
+    buttonOn3(medium,short,this);
     console.log("1+ hours");
     
 });
@@ -111,6 +117,7 @@ competitive.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[2] = true;
     console.log(answers);
+    buttonOn2(coop,this);
     console.log("competitive");
     
 });
@@ -118,6 +125,7 @@ coop.addEventListener("click", function(){
     this.classList.add("buttonClick");
     answers[2] = false;
     console.log(answers);
+    buttonOn2(competitive,this);
     console.log("coop");
     
 });
@@ -164,11 +172,17 @@ function spinTheWheel(x){
 //     }
 // }
 
-function buttonOn(y,z){
+function buttonOn2(y,z){
     z.classList.add("buttonClick");
     if (z.classList == "buttonClick") {
-        y.classList.remove("buttonClick");
-        
+        y.classList.remove("buttonClick");        
+    }
+}
+function buttonOn3(x,y,z){
+    z.classList.add("buttonClick");
+    if (z.classList == "buttonClick") {
+        x.classList.remove("buttonClick");        
+        y.classList.remove("buttonClick");        
     }
 }
 
@@ -188,3 +202,10 @@ else{
     searchAll(answers[0,1,2]);
 }
 }
+
+reset.addEventListener("click", function(){
+    allButtons.forEach(b => {
+        console.log(b);
+        b.classList.remove("buttonClick");
+    });
+});
