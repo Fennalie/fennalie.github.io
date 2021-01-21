@@ -117,7 +117,7 @@ inputField.addEventListener('focus', function () {
 });
 
 inputField.addEventListener('blur', function () {
-  inputField.placeholder = 'How many players?';
+  inputField.placeholder = 'Click & Choose number of players';
   dropdown.classList.remove('open');
 });
 
@@ -207,7 +207,7 @@ function searchKids(t,m,c,k) {
     let result = chosen.map(a => a.name);
     spinTheWheel(result);
     if (result.length >0) {
-        pickedCuisine.textContent = winner;
+        pickedCuisine.textContent = result;
         console.log("there are results")
     }
     else {
@@ -225,7 +225,7 @@ function searchAll(t,m,c) {
     let result = chosen.map(a => a.name);
     spinTheWheel(result);
     if (result.length >0) {
-        pickedCuisine.textContent = winner;
+        pickedCuisine.textContent = result;
         console.log("there are results")
     }
     else {
