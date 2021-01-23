@@ -72,6 +72,7 @@ var games = {
   '40': { 'name': "Werewolf", 'maxplayers': 75, 'minplayers': 7, 'time': 2, 'kid': false, 'competitive': true },
   '41': { 'name': "Duel", 'maxplayers': 2, 'minplayers': 2, 'time': 3, 'kid': false, 'competitive': true },
   '42': { 'name': "Splendor", 'maxplayers': 4, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true },
+  '43': { 'name': "Monopoly", 'maxplayers': 8, 'minplayers': 3, 'time': 2, 'kid': true, 'competitive': true },
 };
 
 // 'use strict';
