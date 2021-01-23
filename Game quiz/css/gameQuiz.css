@@ -1,6 +1,8 @@
 /* button mute class */
 body {
     font-family: 'Raleway' ;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 button {
@@ -19,10 +21,14 @@ button {
 
 span {
     font-family: inherit;
-    width:300px;
-    word-wrap: break-word;
-    white-space: normal;
+    /* display: block; */
+    /* overflow: auto;
+    width: 100%; */
+
+    /* white-space: normal; */
     margin: 1px 1px;
+    /* max-width: 150px; */
+    overflow-wrap: break-word;
 }
 
 i {
@@ -43,6 +49,9 @@ p{
 img {
   width: inherit;
   height: inherit;
+}
+h2 {
+  display: inline;
 }
 
 .lang {
@@ -70,13 +79,30 @@ img {
   display: inline;
 }
 
-.logoDiv {
+.bdLogoDiv {
   width: 120px;
   height: 100px;
   float: right;
-  
+}
+.chLogoDiv {
+  height: 20px;
+  display: block;
 }
 
+#chLogoLink {
+  display: inline-flex;
+  float: right;
+  
+}
+#chAnchor {
+  width: 110px;
+  height: 100px;
+}
+
+/* #chLogo {
+  text-align: right;
+  display: inline;
+} */
 #resultDescription {
     font-size: 8px;
     float: right;
@@ -102,6 +128,7 @@ img {
 }
 
 #pickedCuisine {
+  
   color: salmon;
 }
 
@@ -114,9 +141,16 @@ img {
   background-color: #AEE8EF;
 }
 
+#sectTop {
+  height: fit-content;  
+  margin-bottom: 1.3rem;
+}
 
-
-
+#gamesSelectorh2 {
+  width: 13rem;
+  text-align: left;
+  display: inline;
+}
 
 
 

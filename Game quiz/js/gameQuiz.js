@@ -32,7 +32,7 @@ var k = answers[3];
 var games = {
   '1': { 'name': "Aquarius", 'maxplayers': 5, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true },
   '2': { 'name': "Avalon", 'maxplayers': 10, 'minplayers': 6, 'time': 1, 'kid': false, 'competitive': true },
-  '3': { 'name': "Bananagram", 'maxplayers': 8, 'minplayers': 4, 'time': 3, 'kid': true, 'competitive': true },
+  '3': { 'name': "Bananagrams", 'maxplayers': 8, 'minplayers': 4, 'time': 3, 'kid': true, 'competitive': true },
   '4': { 'name': "Battle ships", 'maxplayers': 2, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true },
   '5': { 'name': "Boggle", 'maxplayers': 10, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true },
   '6': { 'name': "Carcassonne", 'maxplayers': 5, 'minplayers': 2, 'time': 2, 'kid': true, 'competitive': true },
@@ -42,7 +42,7 @@ var games = {
   '10': { 'name': "Coup", 'maxplayers': 6, 'minplayers': 5, 'time': 1, 'kid': false, 'competitive': true },
   '11': { 'name': "Deep sea adventures", 'maxplayers': 6, 'minplayers': 4, 'time': 1, 'kid': true, 'competitive': true },
   '12': { 'name': "Dixit", 'maxplayers': 6, 'minplayers': 3, 'time': 2, 'kid': true, 'competitive': true },
-  '13': { 'name': "Dragon wood", 'maxplayers': 4, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true },
+  '13': { 'name': "Dragonwood", 'maxplayers': 4, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true },
   '14': { 'name': "Dungeon Mayhem", 'maxplayers': 4, 'minplayers': 4, 'time': 2, 'kid': true, 'competitive': true },
   '15': { 'name': "Game of Life", 'maxplayers': 6, 'minplayers': 4, 'time': 2, 'kid': true, 'competitive': true },
   '16': { 'name': "Guillotine", 'maxplayers': 5, 'minplayers': 4, 'time': 1, 'kid': true, 'competitive': true },
@@ -344,8 +344,12 @@ function searchByModes() {
 }
 
 function showResults() {
+  var resultDisplay = [];
+  for (let i = 0; i < result.length; i++) {
+    resultDisplay[i] = " " + String(result[i]) + " ";
+  }
   if (result.length > 0) {
-    pickedCuisine.textContent = result;
+    pickedCuisine.textContent = resultDisplay;
     console.log("there are results")
   }
   else {
