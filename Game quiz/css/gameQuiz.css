@@ -37,6 +37,14 @@ a{
     width: inherit;
     height: inherit;
 }
+p{
+  font-size: 6px;
+}
+img {
+  width: inherit;
+  height: inherit;
+}
+
 .lang {
     background-image: "\f09a";
     font-family: 'FontAwesome';
@@ -56,18 +64,17 @@ a{
     height: 20px;
     
 }
-
-.playersDropdown {
-    height:60px;
-}
-/* #easternList {
-    display: none;
+.imgDiv {
+  width: inherit;
+  height: 40px;
+  display: inline;
 }
 
-#westernList {
-    display: none;
-} */
-
+.logoDiv {
+  width: 120px;
+  height: 100px;
+  float: right;
+}
 
 #resultDescription {
     font-size: 8px;
@@ -80,49 +87,38 @@ a{
     color: white;
 }
 
-
 #smorLogo {
-    width: inherit;
-    height: inherit;
-}
-
-/* #lang { 
-    background-size: cover;
-    width: 20px;
-    height: 25px;
-    float: right;
-} */
-
-.imgDiv {
-    width: inherit;
-    height: 40px;
+    width: 16rem;
+    height: 80px;
     text-align: center;
 }
-
 #trashDescription {
-    font-size: 8px;
+  font-size: 8px;
 }
 #pickDescription {
-    display: inline;
-    font-size: 8px;
+  display: inline;
+  font-size: 8px;
 }
 
 #pickedCuisine {
-    color: salmon;
+  color: salmon;
 }
 
 #reset {
-    background-color: #EA6841;
+  background-color: #EA6841;
 }
 
 #pickButton {
-    display: inline;
-    background-color: #AEE8EF;
+  display: inline;
+  background-color: #AEE8EF;
 }
 
-#fb {
-    position: relative;
-}
+
+
+
+
+
+
 
 /* form {
     position: relative;
@@ -130,7 +126,7 @@ a{
     margin-top: 8vh;
   } */
   
-  .chosen-value,
+  /* .chosen-value,
   .value-list {
     position: relative;
     top: 0;
@@ -211,4 +207,4 @@ a{
     padding: 0;
     opacity: 0;
   }
-  
+   */
