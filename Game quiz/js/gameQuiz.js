@@ -74,6 +74,7 @@ var games = {
   '42': { 'name': "Splendor", 'maxplayers': 4, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true },
   '43': { 'name': "Monopoly", 'maxplayers': 8, 'minplayers': 3, 'time': 2, 'kid': true, 'competitive': true },
   '44': { 'name': "Secret Hitler", 'maxplayers': 10, 'minplayers': 5, 'time': 2, 'kid': false, 'competitive': true },
+  '45': { 'name': "F*$# the Game", 'maxplayers': 8, 'minplayers': 3, 'time': 1, 'kid': false, 'competitive': true },
 };
 
 // 'use strict';
@@ -353,7 +354,7 @@ function showResults() {
   }
   if (result.length > 0) {
     pickedCuisine.textContent = resultDisplay;
-    console.log("there are results")
+    console.log("there are results");
   }
   else {
     pickedCuisine.textContent = "No suitable game, please pick other options";

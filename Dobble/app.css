@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+form {
+	display: flex;
+	align-items: center;
+}
+
+form div {
+	display: flex;
+	flex-direction: column;
+}
+
+form label span {
+	display: inline-block;
+	width: 9em;
+	line-height: 1.5;
+}
+
+[type=submit] {
+	font-size: 150%;
+	font-weight: bold;
+	margin-left: 0.5em;
+}
+
+aside:empty { display: none; }
+
+aside {
+	margin: 1em 0;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+aside .symbol {
+	font-size: 150%;
+	margin: 0 0.2em;
+}
+
+img.symbol { height: 1em; }
+
+.card {
+	width: calc(var(--radius) * 2px);
+	height: calc(var(--radius) * 2px);
+	border-radius: 50%;
+	float: left;
+	border: 2px solid black;
+	position: relative;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+.card .symbol {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: calc(var(--radius) * 0.3px);
+}
+
+@page {
+	margin: 0.3cm;
+}
+
+
+@media print {
+	header, aside { display: none; }
+
+	.card {
+		page-break-inside: avoid;
+	}
+}
