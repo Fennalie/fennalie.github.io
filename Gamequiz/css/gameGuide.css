@@ -1,0 +1,32 @@
+body {
+    font-family: 'Raleway' ;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+#redirect {
+    max-width: 50%;
+    text-align: center;
+
+}
+
+#logo {
+    text-align: center;
+}
+
+/* #box {
+
+} */
+
+#rules {
+    text-align: center;
+}
+
+#youtube{
+    text-align: center;
+}
+
