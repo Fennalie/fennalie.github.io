@@ -5,6 +5,9 @@
         },
         {
             "path": "Gamequiz"
+        },
+        {
+            "path": "."
         }
     ]
 }

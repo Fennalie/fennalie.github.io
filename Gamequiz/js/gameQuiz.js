@@ -30,7 +30,7 @@ var m = answers[1];
 var c = answers[2];
 var k = answers[3];
 var games = {
-  '1': { 'name': "Aquarius", 'maxplayers': 5, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://github.com/Fennalie/fennalie.github.io/blob/fd9657590ab09fc8cb6d51b8ed7b911f74fec516/Game%20quiz/Game%20Guides/Aquarius.html"},
+  '1': { 'name': "Aquarius", 'maxplayers': 5, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://github.com/Fennalie/fennalie.github.io/Gamequiz/GameGuides/Aquarius.html"},
   '2': { 'name': "Avalon", 'maxplayers': 10, 'minplayers': 6, 'time': 1, 'kid': false, 'competitive': true , 'href': "Avalon.html" },
   '3': { 'name': "Bananagrams", 'maxplayers': 8, 'minplayers': 4, 'time': 3, 'kid': true, 'competitive': true , 'href': "Bananagrams.html" },
   '4': { 'name': "Battle ships", 'maxplayers': 2, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "Battleships.html" },
