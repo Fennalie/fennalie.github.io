@@ -10,30 +10,52 @@ body {
 
 div {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px 5px;
+    padding: 5px 5px;
 }
 img {
-    max-width: 50%;
-    height: auto;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-
-/* #redirect {
-    text-align: center;
+/* .rules {
+    
+    
 } */
-
 #logo {
-    max-width: 30%;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 5px 5px;
     
 }
 
-/* #box {
 
-} */
-
-/* #rules {
-    text-align: center;
+#redirect {
+    width: 100%;
+    padding: 5px 5px;
+    
 }
 
-#youtube{
+/* #logo {
+    max-width: 30%;
+    
+} */
+
+/* #box {
+    
+} */
+
+#rules {
+    width: 100%;
+}
+
+/* #youtube{
     text-align: center;
 } */
