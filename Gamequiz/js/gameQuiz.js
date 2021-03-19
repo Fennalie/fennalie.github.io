@@ -38,7 +38,7 @@ var games = {
   '6': { 'name': "Carcassonne", 'maxplayers': 5, 'minplayers': 2, 'time': 2, 'kid': true, 'competitive': true  , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Carcassonne.html"},
   '7': { 'name': "Century:Eastern Wonders", 'maxplayers': 4, 'minplayers': 4, 'time': 2, 'kid': false, 'competitive': false , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/CenturyEW.html"},
   '8': { 'name': "Chess", 'maxplayers': 2, 'minplayers': 2, 'time': 3, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Chess.html"},
-  '9': { 'name': "Code Names", 'maxplayers': 8, 'minplayers': 4, 'time': 1, 'kid': true, 'competitive': false , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Codenames.html"},
+  '9': { 'name': "Codenames", 'maxplayers': 8, 'minplayers': 4, 'time': 1, 'kid': true, 'competitive': false , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Codenames.html"},
   '10': { 'name': "Coup", 'maxplayers': 6, 'minplayers': 5, 'time': 1, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Coup.html"},
   '11': { 'name': "Deep sea adventures", 'maxplayers': 6, 'minplayers': 4, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/DeepSeaAdventures.html"},
   '12': { 'name': "Dixit", 'maxplayers': 6, 'minplayers': 3, 'time': 2, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Dixit.html"},
@@ -67,7 +67,7 @@ var games = {
   '35': { 'name': "Ticket to Ride", 'maxplayers': 5, 'minplayers': 4, 'time': 2, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/TickettoRide.html"},
   '36': { 'name': "Twister", 'maxplayers': 4, 'minplayers': 4, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Twister.html"},
   '37': { 'name': "Uno Flip", 'maxplayers': 10, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/UnoFlip.html"},
-  '38': { 'name': "Uno Stack", 'maxplayers': 10, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/UnoStack.html"},
+  '38': { 'name': "Uno Stacko", 'maxplayers': 10, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/UnoStack.html"},
   '39': { 'name': "Unstable Unicorns", 'maxplayers': 8, 'minplayers': 4, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/UnstableUnicorns.html"},
   '40': { 'name': "Werewolf", 'maxplayers': 75, 'minplayers': 7, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Werewolf.html"},
   '41': { 'name': "Duel", 'maxplayers': 2, 'minplayers': 2, 'time': 3, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Duel.html"},
@@ -75,6 +75,7 @@ var games = {
   '43': { 'name': "Monopoly", 'maxplayers': 8, 'minplayers': 3, 'time': 2, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Monopoly.html"},
   '44': { 'name': "Secret Hitler", 'maxplayers': 10, 'minplayers': 5, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/SecretHitler.html"},
   '45': { 'name': "F*$# the Game", 'maxplayers': 8, 'minplayers': 3, 'time': 1, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/FTheGame.html"},
+  '46': { 'name': "Codenames: Pictures", 'maxplayers': 8, 'minplayers': 2, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/CodenamesPictures.html"},
 };
 
 // 'use strict';
