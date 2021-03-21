@@ -77,6 +77,11 @@ var games = {
   '45': { 'name': "F*$# the Game", 'maxplayers': 8, 'minplayers': 3, 'time': 1, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/FTheGame.html"},
   '46': { 'name': "Codenames: Pictures", 'maxplayers': 8, 'minplayers': 2, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/CodenamesPictures.html"},
   '47': { 'name': "Farkle", 'maxplayers': 10, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Farkle.html"},
+  '48': { 'name': "Onitama", 'maxplayers': 2, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Onitama.html"},
+  '49': { 'name': "Bang", 'maxplayers': 8, 'minplayers': 3, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Bang.html"},
+  '50': { 'name': "Star Fluxx", 'maxplayers': 6, 'minplayers': 2, 'time': 2, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Starfluxx.html"},
+  '51': { 'name': "King of Tokyo", 'maxplayers': 6, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/KingofTokyo.html"},
+  '52': { 'name': "Munchkin Deluxe", 'maxplayers': 6, 'minplayers': 3, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Munchkin.html"},
 };
 
 // 'use strict';
