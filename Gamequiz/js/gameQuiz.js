@@ -76,6 +76,7 @@ var games = {
   '44': { 'name': "Secret Hitler", 'maxplayers': 10, 'minplayers': 5, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/SecretHitler.html"},
   '45': { 'name': "F*$# the Game", 'maxplayers': 8, 'minplayers': 3, 'time': 1, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/FTheGame.html"},
   '46': { 'name': "Codenames: Pictures", 'maxplayers': 8, 'minplayers': 2, 'time': 2, 'kid': false, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/CodenamesPictures.html"},
+  '47': { 'name': "Farkle", 'maxplayers': 10, 'minplayers': 2, 'time': 1, 'kid': true, 'competitive': true , 'href': "https://fennalie.github.io/Gamequiz/GameGuides/Farkle.html"},
 };
 
 // 'use strict';
