@@ -85,9 +85,9 @@ div {
   background: rgb(43, 170, 202);
 }
 
-/* .playerBtns {
-  width: 70%;
-} */
+.playerBtns {
+  width: 100%;
+}
 
 .resultDescription {
   display: block;
@@ -116,7 +116,7 @@ div {
 
 .topButtons {
   display: inline-block;
-  width: 70%;
+  width: 55%;
 }
 
 .resetDiv {
