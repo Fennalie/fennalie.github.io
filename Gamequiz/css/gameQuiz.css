@@ -1,52 +1,53 @@
 /* button mute class */
 body {
-    font-family: 'Raleway' ;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 5px;
-    width: 100%;
-    max-width: 100%;
+  font-family: "Raleway";
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 100%;
 }
 
 button {
-    font-family: inherit;
-    font-weight: 400;
-    border: 0;
-    margin: 0.3rem;
-    line-height: 2.5;
-    padding: 0 20px;
-    text-shadow: 0px 0px 1px #000;
-    border-radius: 10px;
-    background-color: #F5E79B;
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .5),
-                inset -2px -2px 3px rgba(0, 0, 0, .5);
+  font-family: inherit;
+  font-weight: 400;
+  border: 0;
+  display: inline-block;
+  margin: 0.3rem;
+  line-height: 2.5;
+  padding: 0 20px;
+  text-shadow: 0px 0px 1px #000;
+  border-radius: 10px;
+  background-color: #f5e79b;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.5);
 }
 
 span {
-    font-family: inherit;
-    /* display: block; */
-    /* overflow: auto;
+  font-family: inherit;
+  /* display: block; */
+  /* overflow: auto;
     width: 100%; */
 
-    /* white-space: normal; */
-    margin: 1px 1px;
-    /* max-width: 150px; */
-    overflow-wrap: break-word;
+  /* white-space: normal; */
+  margin: 1px 1px;
+  /* max-width: 150px; */
+  overflow-wrap: break-word;
 }
 
 i {
-    margin: 1px 3px;
+  margin: 1px 3px;
 }
 
 input {
-    font-family: inherit;
+  font-family: inherit;
 }
 
-a{
-    width: inherit;
-    height: inherit;
+a {
+  width: inherit;
+  height: inherit;
 }
-p{
+p {
   font-size: 6px;
 }
 img {
@@ -57,70 +58,113 @@ h2 {
   display: inline;
 }
 
+section {
+  display: inline;
+  float: right;
+}
+
+h3 {
+  display: inline-block;
+  width: 50%;
+}
+
+div {
+  display: inline-block;
+}
+
 .lang {
-    background-image: "\f09a";
-    font-family: 'FontAwesome';
-    width: 40px;
-    height: 40px;
-    content: "\f09a";
-    float: right;
+  background-image: "\f09a";
+  font-family: "FontAwesome";
+  width: 40px;
+  height: 40px;
+  content: "\f09a";
+  float: right;
 }
 
 .buttonClick {
-    background: rgb(43, 170, 202);
+  background: rgb(43, 170, 202);
 }
 
+/* .playerBtns {
+  width: 70%;
+} */
+
 .resultDescription {
-    display: block;
-    width: 100%;
-    height: 20px;
-    
+  display: block;
+  width: 100%;
+  height: 20px;
 }
 .imgDiv {
-  
   display: inline;
-  
 }
 
 .bdLogoDiv {
-  width: 120px;
+  width: 150px;
   height: 100px;
   float: right;
+  margin: 5px;
+  padding: 5px;
 }
 .chLogoDiv {
   height: 20px;
-  display: block;
+  float: inline-end;
 }
 
+.playerDiv {
+  width: 100%;
+}
+
+.topButtons {
+  display: inline-block;
+  width: 70%;
+}
+
+.resetDiv {
+  display: inline-block;
+  width: 100%;
+}
+/* .logos {
+  height: 200px;
+} */
+
 #chLogoLink {
-  display: inline-flex;
+  width: 30%;
   float: right;
-  
+}
+
+#chLogo {
+  float: right;
+  padding: 5px;
+  margin: 5px;
 }
 #chAnchor {
   width: 110px;
   height: 100px;
 }
 
+#ccH3 {
+  display: block;
+  width: 100%;
+}
 /* #chLogo {
   text-align: right;
   display: inline;
 } */
 #resultDescription {
-    font-size: 8px;
-    float: right;
+  font-size: 8px;
+  float: right;
 }
 
 #allPick {
-    float: right;
-    background-color: mediumvioletred;
-    color: white;
+  float: right;
+  background-color: mediumvioletred;
+  color: white;
 }
 
 #smorLogo {
-    width: 16rem;
-    height: 80px;
-    text-align: center;
+  width: 16rem;
+  height: 80px;
+  text-align: center;
 }
 #trashDescription {
   font-size: 8px;
@@ -131,40 +175,46 @@ h2 {
 }
 
 #pickedCuisine {
-  
   color: salmon;
 }
 
+#pickOne {
+  width: 10rem;
+}
+
 #reset {
-  background-color: #EA6841;
+  background-color: #ea6841;
 }
 
 #pickButton {
   display: inline;
-  background-color: #AEE8EF;
+  background-color: #aee8ef;
 }
 
 #sectTop {
-  height: fit-content;  
-  margin-bottom: 1.3rem;
+  height: fit-content;
+  float: none;
+  display: block;
 }
 
 #gamesSelectorh2 {
-  width: 13rem;
   text-align: left;
-  display: inline;
+  display: inline-block;
 }
 
-
-
+#bdLogo {
+  width: 150px;
+  height: 100px;
+  float: right;
+}
 
 /* form {
     position: relative;
     width: 18rem;
     margin-top: 8vh;
   } */
-  
-  /* .chosen-value,
+
+/* .chosen-value,
   .value-list {
     position: relative;
     top: 0;
