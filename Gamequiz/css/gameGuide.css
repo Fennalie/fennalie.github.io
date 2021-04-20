@@ -1,55 +1,41 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-    /* padding-right: 10px;
+  font-family: "Raleway", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  /* padding-right: 10px;
     padding-left: 10px; */
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 div {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 5px 5px;
-    padding: 5px 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5px 5px;
+  padding: 5px 5px;
 }
 img {
-    
-    /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    /* object-fit: cover; */
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* object-fit: cover; */
 }
-/* p {
-    font-family: 'Raleway', sans-serif;
-}
-h5 {
-    font-family: 'Raleway', sans-serif;
-} */
 
-
-/* .rules {
-    
-    
-} */
 #logo {
-    width: 30%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    padding: 5px 5px;
-    
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 5px 5px;
 }
-
 
 #redirect {
-    width: 100%;
-    height: 7rem;
-    padding: 5px 5px;
-    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* #logo {
@@ -62,10 +48,34 @@ h5 {
 } */
 
 #rules {
-    width: 100%;
-    
+  width: 100%;
 }
 
 /* #youtube{
     text-align: center;
 } */
+#rulesleft {
+  padding: 15px;
+  float: left;
+  width: 45%;
+}
+#rulesright {
+  padding: 15px;
+  float: right;
+  width: 45%;
+}
+#rulesmid {
+  padding: 15px;
+  float: center;
+  width: 45%;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 500px) {
+  #rulesleft,
+  #rulesright {
+    width: 100%;
+    float: none;
+    padding: unset; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
